@@ -29,22 +29,22 @@
     --text-heading:#f9f9f9;
 
     /* Font Family Leckerli One*/
-    --font-family-leck:"Leckerli One", cursive;
-    --logo:400 2.5rem/auto var(--font-family-leck);
+    --font-family-leck:"Leckerli One", sans-serif;
+    --logo:400 2.5rem var(--font-family-leck);
 
     /* Font Family Baloo2 */
     --font-family-baloo2:"Baloo 2", sans-serif;
-    --heading-md:700 1.75rem/auto var(--font-family-baloo2);
-    --heading-sm:700 1.125rem/auto var(--font-family-baloo2);
+    --heading-md:700 1.75rem var(--font-family-baloo2);
+    --heading-sm:700 1.125rem var(--font-family-baloo2);
 
     /* Font Family Open Sans */
     --font-family-opensans:"Open Sans", sans-serif;
-    --body-md-regular:400 1rem/auto var(--font-family-opensans);
-    --body-md-semibold:600 1rem/auto var(--font-family-opensans);
-    --body-sm-regular:400 .875rem/auto var(--font-family-opensans);
-    --body-sm-semibold:600 .875rem/auto var(--font-family-opensans);
-    --body-xs-regular:400 .75rem/auto var(--font-family-opensans);
-    --body-xs-semibold:600 .75rem/auto var(--font-family-opensans);
+    --body-md-regular:400 1rem var(--font-family-opensans);
+    --body-md-semibold:600 1rem var(--font-family-opensans);
+    --body-sm-regular:400 .875rem var(--font-family-opensans);
+    --body-sm-semibold:600 .875rem var(--font-family-opensans);
+    --body-xs-regular:400 .75rem var(--font-family-opensans);
+    --body-xs-semibold:600 .75rem var(--font-family-opensans);
 }
 
 body {

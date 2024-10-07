@@ -15,8 +15,36 @@
     background-repeat:round;
     border-radius: 12px;
     height: calc(100vh - 40px);
+    padding: 32px 32px;
 
+    img {
+        width: 45.85px;
+        height: 48px;
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        font:var(--logo);
+        color:#FF598B;
+        margin-bottom: 4px;
+    }
+
+    span {
+        font:300 1rem var(--font-family-opensans);
+        color: var(--text-heading);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 #invite {
     background-color:var(--shape-body);
