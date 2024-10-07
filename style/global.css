@@ -47,7 +47,10 @@
     --body-xs-semibold:600 .75rem/auto var(--font-family-opensans);
 }
 
-
+body {
+    background-color: var(--shape-background);
+    overflow: hidden;
+}
 
 
 
