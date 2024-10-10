@@ -52,6 +52,19 @@ body {
     overflow: hidden;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
 
-
-
+.img-legend {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 24px;
+    
+    legend{
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+}

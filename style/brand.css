@@ -34,22 +34,3 @@
         color: var(--text-heading);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-#invite {
-    background-color:var(--shape-body);
-    overflow: auto;
-    scrollbar-width:none;
-    border-radius: 12px;
-    height: calc(100vh - 40px);
-}
