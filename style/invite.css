@@ -44,7 +44,7 @@
     flex-direction: column;
     margin-bottom: 16px;
 
-    label{
+    & > label {
         font: var(--body-sm-regular);
         color: var(--text-body);
         margin-bottom: 16px;
@@ -61,44 +61,67 @@
        
     }
 
+    textarea {
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 8px;
+        padding:16px;
+        font:var(--body-md-regular);
+        color:var(--input-placeholder);
+        resize: none;
+    }
+
+    #input-selection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:center;
+        column-gap: 4px;
+        padding-inline:4px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+    
+    
+        .selection {
+            height: 40px;
+            border-radius: 8px;
+            position: relative;
+            font: var(--body-sm-regular);
+            color: var(--text-body);
+    
+            & input{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+    
+            &:has(:checked){
+                background-color:var(--input-stroke);
+                font: var(--body-sm-semibold);
+                color: var(--text-heading);
+
+                & svg path {
+                    stroke:var(--brand-light);
+                }
+            }
+
+            .container-radio {
+                margin-inline: auto;
+                column-gap:8px;
+        
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }    
+    }
 }
 
 .input-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
-}
-
-#input-selection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items:center;
-    column-gap: 4px;
-    padding-inline:4px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: var(--input-base);
-    border: 1px solid var(--input-stroke);
-
-
-    .selection {
-        height: 40px;
-        border-radius: 8px;
-        /* background-color: var(--input-base); 
-        border: 1px solid var(--input-stroke); */
-        position: relative;
-
-        & input{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-        }
-
-        &:has(:checked){
-            background-color:var(--input-stroke);
-        }
-
-    }    
-
 }
