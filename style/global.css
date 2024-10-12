@@ -54,7 +54,6 @@ body {
 
 .flex{
     display: flex;
-    align-items: center;
 }
 
 .img-legend {
@@ -67,4 +66,8 @@ body {
         font: var(--heading-sm);
         color: var(--text-heading);
     }
+}
+
+fieldset + fieldset {
+    margin-top: 48px;
 }
