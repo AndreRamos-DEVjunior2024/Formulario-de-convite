@@ -70,20 +70,62 @@
 }
 
 #theme{
+    margin-top: 28px;
+
+    & > label{
+        display: block;
+        font: var(--body-sm-regular);
+        color: var(--text-body);
+        margin-bottom: 16px;
+    }
     #items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(134px, 1fr));
+        gap:8px;
+        margin-inline: auto;
+
+
         .theme-selection{
+            position: relative;
             width: 134px;
             height: 103px;
             background-color: var(--shape-button);
             border-radius: 8px;
-            justify-content: center;
-            padding-top: 4px;
+            flex-direction: column;
+
+            & input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
 
             .img-theme{
                 width: 126px;
                 height: 64px;
-                background-color:#B3B3B3;
+                margin-top: 4px;
+                margin-bottom: 8px;
+                margin-inline: 4px;
                 border-radius: 4px;
+                background-color:#B3B3B3;
+                overflow: hidden;
+            }
+
+            .text-theme{
+                margin-inline: auto;
+
+                label {
+                    font: var(--body-sm-regular);
+                    color: var(--text-body);
+                }
+            }
+
+            &:hover {
+                background-color: var(--input-stroke);
+            }
+
+            &:has(:checked){
+                outline:2px solid var(--brand-light) ;
             }
         }
     }
