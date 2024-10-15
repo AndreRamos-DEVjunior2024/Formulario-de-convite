@@ -80,7 +80,7 @@
                         <!-- Fieldset-1 -->
 
                         <!-- Fieldset-2 -->
-                        <fieldset style="height: 900px;">
+                        <fieldset>
                             <div class="img-legend">
                                 <img src="assets/icon/paintbrush-vertical.svg" alt="">
                                 <legend>Personalização</legend>
@@ -128,7 +128,7 @@
                                 <label>Tema de evento</label>
                                 <div id="items">
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest" checked>
+                                        <input type="radio" name="theme-fest" id="aniversario" checked>
                                         <div class="img-theme">
                                             <img src="assets/img/aniversario.svg" alt="">
                                         </div>
@@ -137,7 +137,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="infantil">
                                         <div class="img-theme">
                                             <img src="assets/img/infantil.svg" alt="">
                                         </div>
@@ -146,7 +146,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="formatura">
                                         <div class="img-theme">
                                             <img src="assets/img/formatura.svg" alt="">
                                         </div>
@@ -155,7 +155,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="casamento">
                                         <div class="img-theme">
                                             <img src="assets/img/casamento.svg" alt="">
                                         </div>
@@ -164,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="cha-de-bebe">
                                         <div class="img-theme">
                                             <img src="assets/img/Cha-bebe.svg" alt="">
                                         </div>
@@ -173,7 +173,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="cha-panela">
                                         <div class="img-theme">
                                             <img src="assets/img/cha-panela.svg" alt="">
                                         </div>
@@ -182,7 +182,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="carnaval">
                                         <div class="img-theme">
                                             <img src="assets/img/carnaval.svg" alt="">
                                         </div>
@@ -191,7 +191,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="pascoa">
                                         <div class="img-theme">
                                             <img src="assets/img/pascoa.svg" alt="">
                                         </div>
@@ -200,7 +200,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="sao-joao">
                                         <div class="img-theme">
                                             <img src="assets/img/sao-joao.svg" alt="">
                                         </div>
@@ -209,7 +209,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="halloween">
                                         <div class="img-theme">
                                             <img src="assets/img/halloween.svg" alt="">
                                         </div>
@@ -218,7 +218,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="natal">
                                         <div class="img-theme">
                                             <img src="assets/img/natal.svg" alt="">
                                         </div>
@@ -227,7 +227,7 @@
                                         </div>
                                     </div>
                                     <div class="theme-selection flex">
-                                        <input type="radio" name="theme-fest" id="theme-fest">
+                                        <input type="radio" name="theme-fest" id="outro">
                                         <div class="img-theme">
                                             <img src="assets/img/outro.svg" alt="">
                                         </div>
@@ -236,6 +236,39 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div id="option-theme" class="flex">
+                                 <div id="switchtoggle">
+                                    <label>Estilo</label>
+                                    <div id="switch-wrapper" class="flex">
+                                        <div id="switch" class="flex">
+                                            <div id="dark">
+                                                <input type="radio" id="dark" name="estilo" checked> 
+                                            </div>
+                                            <div id="clear">
+                                                <input type="radio" id="clear" name="estilo" value="clear">
+                                            </div>
+                                        </div>
+                                        <label>Escuro</label>
+                                    </div>
+                                </div>
+                                <div id="fileinput" class="flex">
+                                    <label> Foto de capa</label>
+                                    <div class="flex">
+                                        <div id="button-file" class="flex">
+                                            <div class="flex">  
+                                                <img src="assets/icon/upload.svg" alt="">
+                                                <label>Selecionar</label>
+                                            </div>
+                                            <input type="file" id="file" name="file">
+                                        </div>
+                                        <div id="text-file">
+                                            <span>Nenhum arquivo selecionado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </fieldset>
                         <!-- Fieldset-2 -->
