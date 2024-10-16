@@ -32,8 +32,8 @@
                             <legend>Sobre o evento</legend>
                             </div>
                                 <div class="input-wrapper">
-                                    <label for="fullname">Título</label>
-                                    <input id="fullname" name="fullname" type="text" placeholder="Nome do evento">
+                                    <label for="event-name">Título</label>
+                                    <input id="event-name" name="event-name" type="text" placeholder="Nome do evento">
                                 </div>
                                 <div class="input-grid">
                                     <div class="input-wrapper">
@@ -239,18 +239,11 @@
                             </div>
 
                             <div id="option-theme" class="flex">
-                                 <div id="switchtoggle">
+                                <div id="switchtoggle">
                                     <label>Estilo</label>
-                                    <div id="switch-wrapper" class="flex">
-                                        <div id="switch" class="flex">
-                                            <div id="dark">
-                                                <input type="radio" id="dark" name="estilo" checked> 
-                                            </div>
-                                            <div id="clear">
-                                                <input type="radio" id="clear" name="estilo" value="clear">
-                                            </div>
-                                        </div>
-                                        <label>Escuro</label>
+                                    <div class="flex">
+                                        <input type="checkbox" name="switch" id="switch">
+                                        <label for="switch">Escuro</label>
                                     </div>
                                 </div>
                                 <div id="fileinput" class="flex">
@@ -268,10 +261,51 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </fieldset>
                         <!-- Fieldset-2 -->
+
+                        <!-- Fieldset-3 -->
+                        <fieldset>
+                            <div class="img-legend">
+                                <img src="assets/icon/contact.svg" alt="">
+                                <legend>Dados para contato</legend>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="fullname">Título</label>
+                                <input id="fullname" name="fullname" type="text" placeholder="Nome completo">
+                            </div>
+                            <div class="input-grid">
+                                <div class="input-wrapper">
+                                    <label for="email">E-mail</label>
+                                    <input id="email" type="email" name="email" placeholder="exemplo@email.com">
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="tel">Telefone</label>
+                                    <input id="tel" type="tel" name="tel" placeholder="(99)99999-9999">
+                                </div>     
+                            </div>
+                        </fieldset>
+                        <!-- Fieldset-3 -->
+
+                        <!-- Fieldset-4 -->
+                         <fieldset>
+                            <footer>
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" name="termos" id="terms">
+                                    <label for="">Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                                </div>
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" name="termos" id="terms">
+                                    <label for="">Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                                </div>
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" name="termos" id="terms">
+                                    <label for="">Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                                </div>
+                            </footer>
+                         </fieldset>
+                        <!-- Fieldset-4 -->
                     </form>
                 </div>
             </div>

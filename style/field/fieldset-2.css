@@ -144,55 +144,50 @@
             margin-bottom: 16px;
        }
 
-        #switch-wrapper{
-            width: 176px;
-            align-content: center;
+       & > div {
+        /* border: 1px solid #59FF91; */
 
-            #switch{
-                position: relative;
-                align-items: center;
-                justify-content: center;
-                width: 64px;
-                height: 32px;
-                margin-block: 8px;
-                border: 1px solid var(--input-stroke);
-                border-radius: 999px;
-                background-color: var(--input-base);
-
-                & input {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                }
-
-                #dark{
-                    width: 24px;
-                    height: 24px;
-                    border-radius: 999px;
-
-                    &:has(:checked){
-                        background-color: var(--input-stroke);
-                    }
-
-                }
-                #clear{
-                    width: 24px;
-                    height: 24px;
-                    border-radius: 999px;
-
-                    &:has(:checked){
-                        background-color: var(--text-heading);
-                    }
-                }
-            }
-
-            label {
+            label{
+                margin-block: auto;
                 margin-left: 12px;
-                margin-block: 14.5px;
             }
-        }
+       }
+
+       input[type="checkbox"]{
+        appearance: none;
+        width: 64px;
+        height: 32px;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 50px;
+        position:relative;
+        cursor: pointer;
+        transition: .3s;
+       }
+       
+       input[type="checkbox"]::before{
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-color: var(--input-stroke);
+        border-radius: 50%;
+        left: 4px;
+        top: 3px;
+        transition: .3s;
+       }
+       
+       input[type="checkbox"]:checked {
+        background-color: #59b2ff;
+       }
+
+       input[type="checkbox"]:checked:before {
+        background-color: aliceblue;
+        left: 34px;
+       }
+
     }
+        
 
     #fileinput {
         flex-direction: column;
@@ -251,7 +246,5 @@
             color: var(--input-placeholder);
             font: var(--body-md-regular);
         }
-
-        
     }
 }
