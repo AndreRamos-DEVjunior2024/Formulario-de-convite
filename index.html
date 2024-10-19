@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
+    <script src="index.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -32,20 +33,20 @@
                             <legend>Sobre o evento</legend>
                             </div>
                                 <div class="input-wrapper">
-                                    <label for="event-name">Título</label>
+                                    <label for="event-name" class="label">Título</label>
                                     <input id="event-name" name="event-name" type="text" placeholder="Nome do evento">
                                 </div>
                                 <div class="input-grid">
                                     <div class="input-wrapper">
-                                        <label for="start">Início</label>
+                                        <label for="start" class="label">Início</label>
                                         <input id="start" type="datetime-local" name="start" >
                                     </div>
                                     <div class="input-wrapper">
-                                        <label for="end">Fim</label>
+                                        <label for="end" class="label">Fim</label>
                                         <input id="end" type="datetime-local" name="end">
                                     </div>
                                     <div class="input-wrapper">
-                                        <label>Tipo</label>
+                                        <label class="label">Tipo</label>
                                         <div id="input-selection">
                                             <div class="selection flex">
                                                 <input type="radio" name="tipo" id="presencial" value="presencial" checked>
@@ -68,13 +69,17 @@
                                         </div>
                                     </div>
                                     <div class="input-wrapper">
-                                        <label for="location">Local</label>
+                                        <label for="location" class="label">Local</label>
                                         <input id="location" type="text" name="location" placeholder="Link ou endereço">
                                     </div>
                                 </div>
                                 <div class="input-wrapper">
-                                    <label for="description">Descrição</label>
-                                    <textarea id="description" name="descrição" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                                    <label for="description" class="label">Descrição</label>
+                                    <textarea id="description" name="descrição" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento" required></textarea>
+                                    <div class="error">
+                                        <img src="assets/icon/circle-alert.svg" alt="">
+                                        <span>Campo obrigatório</span>
+                                    </div>
                                 </div>
                         </fieldset>
                         <!-- Fieldset-1 -->
@@ -85,8 +90,8 @@
                                 <img src="assets/icon/paintbrush-vertical.svg" alt="">
                                 <legend>Personalização</legend>
                             </div>
-                            <div id="form">
-                                <label for="">Cor principal</label>
+                            <div id="form" >
+                                <label for="" class="label">Cor principal</label>
                                 <div id="selection-color" class="flex">
                                     <div id="blue" class="color">
                                         <input type="radio" id="blue" name="color">
@@ -125,7 +130,7 @@
                             </div>
 
                             <div id="theme">
-                                <label>Tema de evento</label>
+                                <label class="label">Tema de evento</label>
                                 <div id="items">
                                     <div class="theme-selection flex">
                                         <input type="radio" name="theme-fest" id="aniversario" checked>
@@ -240,14 +245,14 @@
 
                             <div id="option-theme" class="flex">
                                 <div id="switchtoggle">
-                                    <label>Estilo</label>
-                                    <div class="flex">
+                                    <label class="label">Estilo</label>
+                                    <div id="dark" class="flex" >
                                         <input type="checkbox" name="switch" id="switch">
-                                        <label for="switch">Escuro</label>
+                                        <label for="switch" id="onOff">Escuro</label>
                                     </div>
                                 </div>
                                 <div id="fileinput" class="flex">
-                                    <label> Foto de capa</label>
+                                    <label class="label">Foto de capa</label>
                                     <div class="flex">
                                         <div id="button-file" class="flex">
                                             <div class="flex">  
@@ -257,7 +262,7 @@
                                             <input type="file" id="file" name="file">
                                         </div>
                                         <div id="text-file">
-                                            <span>Nenhum arquivo selecionado</span>
+                                            <span id="name-file">Nenhum arquivo selecionado</span>
                                         </div>
                                     </div>
                                 </div>
@@ -272,16 +277,20 @@
                                 <legend>Dados para contato</legend>
                             </div>
                             <div class="input-wrapper">
-                                <label for="fullname">Nome</label>
-                                <input id="fullname" name="fullname" type="text" placeholder="Nome completo">
+                                <label for="fullname" class="label">Nome</label>
+                                <input id="fullname" name="fullname" type="text" placeholder="Nome completo" required> 
+                                <div class="error">
+                                    <img src="assets/icon/circle-alert.svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
                             <div class="input-grid">
                                 <div class="input-wrapper">
-                                    <label for="email">E-mail</label>
+                                    <label for="email" class="label">E-mail</label>
                                     <input id="email" type="email" name="email" placeholder="exemplo@email.com">
                                 </div>
                                 <div class="input-wrapper">
-                                    <label for="tel">Telefone</label>
+                                    <label for="tel" class="label">Telefone</label>
                                     <input id="tel" type="tel" name="tel" placeholder="(99)99999-9999">
                                 </div>     
                             </div>
@@ -292,24 +301,20 @@
                          <fieldset>
                             <footer>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" name="termos" id="terms">
-                                    <label for="">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+                                    <input type="checkbox" name="termos" id="terms" checked>
+                                    <label for="terms">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
                                 </div>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" name="termos" id="terms">
-                                    <label for="">Aceito receber atualizações e promoções por e-mail</label>
+                                    <input type="checkbox" name="termos" id="shipping-email">
+                                    <label for="shipping-email">Aceito receber atualizações e promoções por e-mail</label>
                                 </div>
                                 <div class="checkbox-wrapper">
-                                    <input type="checkbox" name="termos" id="terms">
-                                    <label for="">Aceito receber atualizações e promoções por SMS</label>
+                                    <input type="checkbox" name="termos" id="shipping-sms">
+                                    <label for="shipping-sms">Aceito receber atualizações e promoções por SMS</label>
                                 </div>
                                 <div class="flex button">
-                                    <div id="button-invitation" class="flex">
-                                        <div class="flex">
-                                            <img src="assets/icon/ticket.svg" alt="">
-                                            <label for="invitation">Gerar Convite</label>
-                                        </div>
-                                        <!-- <input type="button" id="invitation" name="convite"> -->
+                                    <div class="flex">
+                                        <input  id="button-invitation" type="button" id="invitation"  value="Gerar convite" name="convite">
                                     </div>
                                 </div>
                             </footer>

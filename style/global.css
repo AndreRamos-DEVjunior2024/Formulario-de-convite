@@ -71,3 +71,59 @@ body {
 fieldset + fieldset {
     margin-top: 48px;
 }
+
+.label {
+    display: block;
+    font: var(--body-sm-regular);
+    color: var(--text-body);
+    margin-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    input {
+        height: 48px;
+    }
+   
+    input,textarea {
+        border-radius: 8px;
+        padding-left: 16px;
+        background-color: var(--input-base);
+        border:1px solid var(--input-stroke);
+        font:var(--body-md-regular);
+        
+        &::placeholder{
+            color: var(--input-placeholder);
+        }
+
+        &:not(:focus):invalid{
+            border:1px solid var(--danger);
+        }
+
+        &[required] + .error {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font: var(--body-xs-regular);
+            color: var(--danger);
+            margin-top: 8px;
+        }
+
+        &:valid + .error {
+            display: none;
+        }
+    }
+
+    input:focus,textarea:focus {
+        outline: 1px solid var(--brand-light);
+
+    }
+
+    textarea {
+        padding:16px;
+        resize: none;
+    }
+}

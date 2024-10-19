@@ -6,17 +6,29 @@ footer{
 
     .checkbox-wrapper {
         display:flex;
-        align-items: center;
         margin-bottom: 8px;
 
-        input[type="checkbox"]{
+        input{
             appearance: none; 
+        }
+
+        input + label:before {
+            content:"";
             width: 20px;
             height: 20px;
             border: 1px solid var(--input-stroke);
             border-radius: 4px;
             background: var(--input-base);
-            margin-right: 12px; 
+            display: inline-block;
+            vertical-align:middle; 
+            margin-right: 12px;
+            margin-bottom: 3px;   
+        }
+
+        input:checked + label:before {
+            border: 1px solid var(--brand-light);
+            background-image: url(../../assets/icon/check.svg);
+            background-position: center;
         }
 
         label {
@@ -37,29 +49,24 @@ footer{
     }
 
     #button-invitation {
-        align-items: center;
-        justify-content: center;
         width: 177px;
         height: 48px;
         margin-top: 48px;
+        border: 0;
+        padding-left: 20px;
         background-color: var(--brand-dark);
+        background-image: url(../../assets/icon/ticket.svg);
+        background-repeat:no-repeat ;
+        background-position:19px 14px;
+        background-size:20px;
         color: var(--text-header);
         border-radius: 8px;
+        font: var(--body-md-semibold);
+        color: var(--text-heading);
 
-        & > div {
-            column-gap: 12px;
-
-            img {
-                width:20px;
-                height: 20px;
-            }
-
-            label {
-                font: var(--body-md-semibold);
-                color: var(--text-heading);
-            }
+        &:hover {
+            background-color: var(--brand-mid);
         }
-        
-        
+
     }
 }

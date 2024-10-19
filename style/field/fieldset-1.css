@@ -1,50 +1,13 @@
-.input-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-
-    & > label {
-        font: var(--body-sm-regular);
-        color: var(--text-body);
-        margin-bottom: 16px;
-    }
-   
-    input {
-        height: 48px;
-        border-radius: 8px;
-        padding-left: 16px;
-        background-color: var(--input-base);
-        border: 1px solid var(--input-stroke);
-        font:var(--body-md-regular);
-        
-        &::placeholder{
-            color: var(--input-placeholder);
-        }
-    }
-
-    textarea {
-        background-color: var(--input-base);
-        border: 1px solid var(--input-stroke);
-        border-radius: 8px;
-        padding:16px;
-        font:var(--body-md-regular);
-        resize: none;
-
-        &::placeholder{
-            color: var(--input-placeholder);
-        }
-    }
-
-    #input-selection {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items:center;
-        column-gap: 4px;
-        padding-inline:4px;
-        height: 48px;
-        border-radius: 8px;
-        background-color: var(--input-base);
-        border: 1px solid var(--input-stroke);
+#input-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    column-gap: 4px;
+    padding-inline:4px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
     
     
         .selection {
@@ -72,18 +35,17 @@
                 }
             }
 
-            .container-radio {
-                margin-inline: auto;
-                column-gap:8px;
-                align-items: center;
+        .container-radio {
+             margin-inline: auto;
+            column-gap:8px;
+            align-items: center;
         
-                img {
-                    width: 16px;
-                    height: 16px;
-                }
+            img {
+                width: 16px;
+                height: 16px;
             }
-        }    
-    }
+        }
+    }    
 }
 
 input[type="datetime-local"]{
