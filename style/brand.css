@@ -1,11 +1,11 @@
 #app-festivite {
     display: grid;
     grid-template-columns: 32.79% 67.21%;
-    margin-inline: 20px;
-    margin-top: 20px;
+    margin-inline: 1.25rem;
+    margin-top: 1.25rem;
 
     aside {
-        margin-right: 20px;
+        margin-right: 1.25rem;
     }
 
 }
@@ -13,20 +13,20 @@
 #brand {
     background-image: url(../assets/Background.png);
     background-repeat:round;
-    border-radius: 12px;
+    border-radius: .75rem;
     height: calc(100vh - 40px);
-    padding: 32px 32px;
+    padding: 2rem 2rem;
 
     img {
-        width: 45.85px;
-        height: 48px;
-        margin-bottom: 16px;
+        width: 2.865rem;
+        height: 3rem;
+        margin-bottom: 1rem;
     }
 
     h1 {
         font:var(--logo);
         color:#FF598B;
-        margin-bottom: 4px;
+        margin-bottom: .25rem;
     }
 
     span {

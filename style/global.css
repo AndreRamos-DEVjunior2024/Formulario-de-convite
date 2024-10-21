@@ -59,8 +59,8 @@ body {
 .img-legend {
     display: flex;
     align-items: center;
-    column-gap: 14px;
-    margin-bottom: 24px;
+    column-gap: .875rem;
+    margin-bottom: 1.5rem;
     
     legend{
         font: var(--heading-sm);
@@ -69,28 +69,28 @@ body {
 }
 
 fieldset + fieldset {
-    margin-top: 48px;
+    margin-top: 3rem;
 }
 
 .label {
     display: block;
     font: var(--body-sm-regular);
     color: var(--text-body);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .input-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 
     input {
-        height: 48px;
+        height: 3rem;
     }
    
     input,textarea {
-        border-radius: 8px;
-        padding-left: 16px;
+        border-radius: .5rem;
+        padding-left: 1rem;
         background-color: var(--input-base);
         border:1px solid var(--input-stroke);
         font:var(--body-md-regular);
@@ -106,10 +106,10 @@ fieldset + fieldset {
         &[required] + .error {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: .5rem;
             font: var(--body-xs-regular);
             color: var(--danger);
-            margin-top: 8px;
+            margin-top: .5rem;
         }
 
         &:valid + .error {
@@ -123,7 +123,7 @@ fieldset + fieldset {
     }
 
     textarea {
-        padding:16px;
+        padding:1rem;
         resize: none;
     }
 }

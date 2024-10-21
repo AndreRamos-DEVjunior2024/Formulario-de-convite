@@ -3,10 +3,9 @@
 
     .color {
         position: relative;
-        width: 40px;
-        height: 40px;
-        background-color: brown;
-        border-radius: 999px;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
         border: 6px solid var(--shape-button);
 
         & input {
@@ -61,21 +60,21 @@
 }
 
 #theme{
-    margin-block: 28px;
+    margin-block: 1.75rem;
 
     #items{
         display: grid;
-        grid-template-columns: repeat(auto-fit , minmax(134px, 1fr));
-        gap:8px;
+        grid-template-columns: repeat(auto-fit , minmax(8.375rem, 1fr));
+        gap:.5rem;
         margin-inline: auto;
 
 
         .theme-selection{
             position: relative;
-            width: 134px;
-            height: 103px;
+            width: 8.375rem;
+            height: 6.43rem;
             background-color: var(--shape-button);
-            border-radius: 8px;
+            border-radius: .5rem;
             flex-direction: column;
 
             & input {
@@ -86,12 +85,12 @@
             }
 
             .img-theme{
-                width: 126px;
-                height: 64px;
-                margin-top: 4px;
-                margin-bottom: 8px;
-                margin-inline: 4px;
-                border-radius: 4px;
+                width: 7.875rem;
+                height: 4rem;
+                margin-top: .25rem;
+                margin-bottom: .5rem;
+                margin-inline: .25rem;
+                border-radius: .25rem;
                 background-color:#B3B3B3;
                 overflow: hidden;
             }
@@ -128,17 +127,17 @@
                 font: var(--body-sm-regular);
                 color: var(--text-body);
                 margin-block: auto;
-                margin-left: 12px;
+                margin-left: .75rem;
             }
        }
 
        input {
         appearance: none;
-        width: 64px;
-        height: 32px;
+        width: 4rem;
+        height: 2rem;
         background-color: var(--input-base);
         border: 1px solid var(--input-stroke);
-        border-radius: 50px;
+        border-radius: 3.125rem;
         position:relative;
         cursor: pointer;
         transition: .3s;
@@ -147,12 +146,12 @@
        input:before{
         content: "";
         position: absolute;
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
         background-color: var(--input-stroke);
         border-radius: 50%;
-        left: 4px;
-        top: 3px;
+        left: .25rem;
+        top: .187rem;
         transition: .3s;
        }
        
@@ -162,34 +161,34 @@
 
        input:checked:before {
         background-color: aliceblue;
-        left: 34px;
+        left: 2.125rem;
        }
     }
         
 
     #fileinput {
         flex-direction: column;
-        margin-left: 12px;
+        margin-left: .75rem;
         
             & > div {
                 align-items: center;
-                column-gap: 12px;
+                column-gap: .75rem;
             }
 
         #button-file {
             position: relative;
-            margin-top: 3px;
+            margin-top: .187rem;
             background-color: var(--shape-button);
             justify-content: center;
-            width: 119px;
-            height: 40px;
+            width: 7.437rem;
+            height: 2.5rem;
             color: azure;  
-            border-radius: 8px;
-            padding-block:10.5px;
+            border-radius: .5rem;
+            padding-block:.656rem;
             align-items: center;
 
             & > div {
-                column-gap: 8px;
+                column-gap: .5rem;
                 
                 label {
                     font: var(--body-sm-semibold);
@@ -198,8 +197,8 @@
             } 
 
             img {
-                width: 16px;
-                height: 16px;
+                width: 1rem;
+                height: 1rem;
             }
 
             & input {
@@ -216,8 +215,8 @@
         }
 
         #text-file {
-            width: 237px;
-            height: 22px;
+            width: 14.81rem;
+            height: 1.375rem;
             color: var(--input-placeholder);
             font: var(--body-md-regular);
         }
